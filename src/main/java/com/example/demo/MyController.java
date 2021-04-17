@@ -19,6 +19,6 @@ public class MyController {
         carac.setMaker(maker);
         carac.setSize(size);
         caracAction.save(carac);
-        return "Saved carac!";
+        return "Saved carac!!!!!!";
     }
 }
