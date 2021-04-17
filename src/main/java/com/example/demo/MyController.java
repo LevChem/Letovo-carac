@@ -20,5 +20,10 @@ public class MyController {
         carac.setSize(size);
         caracAction.save(carac);
         return "Saved carac!!!!!!";
+
+    }
+    @GetMapping(path="/all")
+    public @ResponseBody Iterable<Carac> getAll() {
+        return caracAction.findAll();
     }
 }
